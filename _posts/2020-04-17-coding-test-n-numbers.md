@@ -51,9 +51,9 @@ def solution(x, n):
 애초부터 반복문의 시작점을 x부터 시작해서 x의 간격으로 넘어가게끔 함.
 
 ```python
-def solution(arr1,arr2):
-    answer = [[c+d for c,d in zip(a,b)] for a,b in zip(arr1,arr2)]
-    return answer
+def number_generator(x, n):
+    return [i * x + x for i in range(n)]
 ```
 
-zip을 2회 사용하여 풀이. 생각보다 더 직관적이라고 느껴짐. zip은 pandas등에서도 데이터를 여러가지 형태로 묶을 때 많이 쓰이게 되는 것이니 기억해둘 필요가 있다.
+한줄 버전.
+이건 시작점을 0부터 n까지 시작점을 자리만 잡아주고 실제로 들어가는 값은 (i*x)+x로 x의 배수가 들어가도록 함
