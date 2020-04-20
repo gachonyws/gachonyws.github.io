@@ -1,5 +1,5 @@
 ---
-title: "제일 작은 수 제거하기"
+title: "Coding Test:제일 작은 수 제거하기"
 date: 2020-04-22
 header:
   # teaser: /assets/images/coding-test/gamestar.png
