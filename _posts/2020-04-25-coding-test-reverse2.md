@@ -28,7 +28,7 @@ published: true
 #### 입출력 예
 
 | n |	return |
-| 12345	 |5,4,3,2,1] |
+| 12345	 | [5,4,3,2,1] |
 
 #### 입출력 예 설명
 
@@ -41,13 +41,10 @@ published: true
 
 ```python
 def solution(n):
-    answer = 0
-    n = str(n)
-
-    for i in range(len(n)):
-        answer += int(n[i])
+    answer = []
+    answer = list(map(int,reversed(str(n))))
 
     return answer
 ```
 
-int형 자료는 iterable 하지 않기 때문에 str로 변환 후 반복문을 돌리고 다시 int로 형변환.
+iterable 하게 str로 변환 후 뒤집어줌. 이후에는 map()을 사용하여 각 인덱스의 값들을 int로 변환하여 리스트로 만들어 마무리
