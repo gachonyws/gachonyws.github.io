@@ -9,7 +9,7 @@ categories:
   - python
 tags:
   - level 1
-published: false
+published: true
 ---
 
 ### 서울에서 김서방 찾기
@@ -33,6 +33,13 @@ String형 배열 seoul의 element중 "Kim"의 위치 x를 찾아, "김서방은 
 ---
 
 ```python
+def solution(seoul):
+    answer = ''
+    answer = str(seoul.index('Kim'))
+
+    return  '김서방은 ' + answer + '에 있다'
 
 
 ```
+
+1. str의 index 활용 쉬운 풀이
