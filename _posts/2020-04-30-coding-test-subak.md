@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 수박수박수박수박수박수?"
-date: 2020-05-22
+date: 2020-04-30
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
@@ -44,3 +44,5 @@ def solution(n):
     return answer
 
 ```
+
+n의 길이 만큼 공백을 zfill로 0으로 채워준 후 반복문을 돌면서 replace 함수 사용
