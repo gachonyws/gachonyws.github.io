@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: [1차]비밀지도"
-date: 2020-05-03
+date: 2020-05-06
 header:
   teaser: /assets/images/coding-test/secret8.png
   og_image: /assets/images/page-header-teaser.png
