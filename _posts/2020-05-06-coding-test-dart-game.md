@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: [1차]다트게임"
-date: 2020-05-03
+date: 2020-05-06
 header:
   teaser: /assets/images/coding-test/gamestar.png
   og_image: /assets/images/page-header-teaser.png
