@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 완주하지 못한 선수"
-date: 2020-05-03
+date: 2020-05-07
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
