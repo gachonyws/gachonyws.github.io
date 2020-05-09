@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: K번째수 "
-date: 2020-05-04
+date: 2020-05-09
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
