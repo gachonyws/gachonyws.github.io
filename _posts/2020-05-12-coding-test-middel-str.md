@@ -1,12 +1,13 @@
 ---
 title: "Coding Test: 가운데 글자 가져오기 "
-date: 2020-05-04
+date: 2020-05-12
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
 categories:
   - coding test
   - python
+hidden: true
 tags:
   - level 1
 ---
