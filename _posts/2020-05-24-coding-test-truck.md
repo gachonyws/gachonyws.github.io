@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 다리를 지나는 트럭"
-date: 2020-05-24
+date: 2020-05-26
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
@@ -8,7 +8,7 @@ categories:
   - coding test
   - python
 tags:
-  - level 1
+  - level 2
 published: true
 ---
 
@@ -37,7 +37,7 @@ published: true
 
 solution 함수의 매개변수로 다리 길이 bridge_length, 다리가 견딜 수 있는 무게 weight, 트럭별 무게 truck_weights가 주어집니다. 이때 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 return 하도록 solution 함수를 완성하세요.
 
-#### 제한사항
+#### 제한 조건
 
 - bridge_length는 1 이상 10,000 이하입니다.
 - weight는 1 이상 10,000 이하입니다.
@@ -57,6 +57,21 @@ solution 함수의 매개변수로 다리 길이 bridge_length, 다리가 견딜
 ---
 
 ```python
+def solution(bridge_length, weight, truck_weights):
+    answer = 0
+    on_bridge_truck = [0] * bridge_length
 
+    while on_bridge_truck:
+        answer += 1
+        on_bridge_truck.pop(0)
 
+        if truck_weights:
+            if sum(on_bridge_truck) + truck_weights[0] <= weight:
+                on_bridge_truck.append(truck_weights.pop(0))
+            else:
+                on_bridge_truck.append(0)
+
+    return answer
 ```
+
+1초마다 트럭들의 움직임이 진행중이라는 것을 인지. 문제 설명에서 힌트를 주었듯이 다리를 지나고 있는 배열을 만들어 <pop(0): 첫번 째 값을 빼냄 / pop(): 마지막 값을 뺌> 을 활용해 Queue/Stack 로직을 작성. 다리를 지난(완료된) 배열은 딱히 필요가 없어 만들지 않는다.
