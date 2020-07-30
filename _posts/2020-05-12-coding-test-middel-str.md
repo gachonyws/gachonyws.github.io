@@ -7,9 +7,9 @@ header:
 categories:
   - coding test
   - python
-visible: 0
 tags:
   - level 1
+published: false
 ---
 
 ### 가운데 글자 가져오기
