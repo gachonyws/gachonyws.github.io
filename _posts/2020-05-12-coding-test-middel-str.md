@@ -7,7 +7,7 @@ header:
 categories:
   - coding test
   - python
-hidden: true
+visible: 0
 tags:
   - level 1
 ---
