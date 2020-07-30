@@ -11,6 +11,7 @@ tags:
   - keras
   - deep learning
   - cnn
+  
 ---
 
 1. 월리를 찾아라
@@ -516,7 +517,7 @@ fig.savefig(os.path.join('/Users/a1/bigdata09/find-waldo/test_results', img_file
 ---
 
 **다른 테스트 사진으로 제대로 찾은 결과**
-오른쪽 상단에서 월리를 성공적으로 찾아냄. 
+오른쪽 상단에서 월리를 성공적으로 찾아냄.
 
 ![Result_error](/assets/images/find-waldo/result2.png)
 
