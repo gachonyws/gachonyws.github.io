@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 실패율"
-date: 2020-05-04
+date: 2020-05-05
 header:
   teaser: /assets/images/coding-test/fail_rate.png
   og_image: /assets/images/coding-test/fail_rate.png
