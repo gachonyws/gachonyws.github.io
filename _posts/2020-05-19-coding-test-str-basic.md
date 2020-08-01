@@ -1,5 +1,5 @@
 ---
-title: "Coding Test: 문자열 다루기 기본"
+title: "Coding Test: 문자열 다루기 기본 "
 date: 2020-05-19
 header:
   # teaser: /assets/images/coding-test/gamestar.png
