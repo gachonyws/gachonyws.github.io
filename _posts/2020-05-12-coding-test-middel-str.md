@@ -9,7 +9,8 @@ categories:
   - python
 tags:
   - level 1
-published: false
+published: true
+
 ---
 
 ### 가운데 글자 가져오기
