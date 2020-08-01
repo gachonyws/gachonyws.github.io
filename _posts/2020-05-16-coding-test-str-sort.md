@@ -56,5 +56,5 @@ def solution(strings, n):
 
 1. sorted() 함수와 람다를 활용한 쉬운 풀이.
 2. 최초 시도에서는 sorted(strings,key:lambda ~) 이런식으로 하여 입출력 예1은 해결이 가능했지만 입출력 예제2 'abcd' vs 'abce' 같은 녀석들 같은 경우엔 결과물을 한번더 sorted() 했어야 했다.
-3. 따라서 처음부터 sorted(sorted(strings) ~ ) 처엄 정렬이 된 녀석을
+3. 따라서 처음부터 sorted(sorted(strings) ~ ) 처럼 정렬이 된 녀석을
 넣어 코드를 한 줄로 줄여봄.
