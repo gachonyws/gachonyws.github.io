@@ -1,5 +1,5 @@
 ---
-title: "Coding Test: 문자열 다루기 기본 "
+title: "Coding Test: 문자열 다루기 기본"
 date: 2020-05-19
 header:
   # teaser: /assets/images/coding-test/gamestar.png
@@ -47,7 +47,7 @@ def solution(s):
 2. isdecimal(): 숫자값 표현에 해당하는가? (아래 참고)
  - 3<sup>2</sup> 의 경우 False
 3. isnumeric(): 숫자의 형태냐?
-- 3<sup>2</sup> 의 경우 True
+ - 3<sup>2</sup> 의 경우 True
 
 1,2,3 모두 사용 가능하지만 차이점이 존재함. 따라서 만약 어떤 텍스트가 int 값으로 변환이 가능한지를 검사하고자 한다면 isdigit()을 사용해서는 안되며, isdecimal()을 써야 할 것이다.
 
