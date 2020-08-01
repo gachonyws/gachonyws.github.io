@@ -45,5 +45,26 @@ published: true
 ---
 
 ```python
+from collections import Counter
 
+def solution(s):
+    answer = False    
+    count = Counter(s)
+
+    if count['p']+count['P'] == count['y']+count['Y']:
+        answer = True
+    if count['p']+count['P']== 0 and count['y']+count['Y'] == 0:
+        answer = True
+
+    return answer
+```
+
+1. collections의 Counter 를 사용하여 개수를 구하고
+2. 조건문으로 해결
+3. 다른 풀이
+
+```python
+# 문제가 소,대문자를 모두 세어야 하기 때문에 lower or upper로 대소문자 통일 후 str의 내장함수 count로 해결 가능
+s = 'pPoooyY'
+s.lower().count('p')
 ```
