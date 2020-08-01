@@ -42,11 +42,11 @@ def solution(s):
     return answer
 ```
 
-1. isdigit(): 0~9 까지의 숫자로 이루어졌냐
+1. isdigit(): 0~9 까지의 숫자로 이루어졌냐?
  - 3<sup>2</sup> 의 경우 True
-2. isdecimal()
+2. isdecimal(): 숫자값 표현에 해당하는가? (아래 참고)
  - 3<sup>2</sup> 의 경우 False
-3. isnumeric(): 숫자의 형태냐
+3. isnumeric(): 숫자의 형태냐?
 - 3<sup>2</sup> 의 경우 True
 
 
