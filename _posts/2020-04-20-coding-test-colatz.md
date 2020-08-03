@@ -1,6 +1,6 @@
 ---
 title: "Coding Test:콜라츠 추측"
-date: 2020-04-21
+date: 2020-04-20
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
