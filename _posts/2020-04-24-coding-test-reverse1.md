@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 정수 내림차순으로 배치하기"
-date: 2020-04-25
+date: 2020-04-24
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
@@ -40,15 +40,9 @@ published: true
 
 ```python
 def solution(n):
-    answer = []
-    n = str(n)
-
-    for i in range(len(n)):
-        answer.append(int(n[i]))
-
-    answer.reverse()
-
-    return answer
+    ls = list(str(n))
+    ls.sort(reverse = True)
+    return int("".join(ls))
 ```
 
-iterable 하게 str로 변환 후 반복문 실행. 이후에는 int로 다시 형변환 후 리스트에 append 후 reverse()로 단순 뒤집기.
+iterable 하게 str로 변환 후 리스트로 만들어 준다. 이후 sort()로 뒤집어 준 후 각 값들을 join하여 하나의 값으로 만들어 준다.
