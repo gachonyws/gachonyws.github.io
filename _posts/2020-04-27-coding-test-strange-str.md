@@ -37,5 +37,25 @@ published: true
 ---
 
 ```python
+def solution(s):
+    answer = []
+    s_sliced = s.split(' ')
 
+    for word in s_sliced:
+        temp=[]
+        for i in range(len(word)):
+            if i != ' ':
+                if i % 2 ==0:
+                    temp.append(word.replace(word[i],word[i].upper())[i])
+                else:
+                    temp.append(word.replace(word[i],word[i].lower())[i])
+            else:
+                temp.append(i)
+
+        answer.append(''.join(temp))
+
+    return ' '.join(answer)
 ```
+
+처음 시도에서는 ```s.split()``` 으로만 문자열을 슬라이싱하여 진행하였고 8번 line의 ```if i != ' ':``` 부분이 없었다. 테스트 케이스에서는 잘 작동했지만 채점을 돌리면 30점 밖에 나오지 않음.
+실제 채점과정에서 들어오는 케이스가 '   TrY    HeLlO   WoRlD ' 같은게 있었던 것 같아서 ```s_sliced = s.split(' ') ``` 와 같이 공백또한 모두 잘라서 결과물에 반영이 되도록 해주니 모두 통과되었다.
