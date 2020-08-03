@@ -1,5 +1,5 @@
 ---
-title: "Coding Test: 나누어 떨어지는 숫자 배열 "
+title: "Coding Test: 나누어 떨어지는 숫자 배열"
 date: 2020-05-14
 header:
   # teaser: /assets/images/coding-test/gamestar.png
