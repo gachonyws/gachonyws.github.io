@@ -50,4 +50,4 @@ def solution(n):
     return answer
 ```
 
-1. str의 index 활용 쉬운 풀이
+주어진 수의 range(1,n+1) 만큼 반복문을 돌면서 나누어 떨어지는 수(약수)들을 모두 더한다.
