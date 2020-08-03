@@ -1,6 +1,6 @@
 ---
 title: "Coding Test: 하샤드 수"
-date: 2020-04-20
+date: 2020-04-19
 header:
   # teaser: /assets/images/coding-test/gamestar.png
   # og_image: /assets/images/page-header-teaser.png
