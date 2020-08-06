@@ -88,7 +88,7 @@ analytics:
 author:
   name             : "유우석" # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/profileimage.jpg"
-  bio              : "코딩일지."
+  bio              : "코딩일지"
   location         : "Seoul, South Korea"
   links:
     - label: "Email"
