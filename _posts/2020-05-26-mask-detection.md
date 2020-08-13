@@ -12,7 +12,7 @@ tags:
   - tensorflow
   - keras
   - deep learning
-  
+
 ---
 
 1. Mask detection
@@ -66,6 +66,22 @@ tags:
 ![modeling2](/assets/images/mask-detection/modeling2.png)
 
 ---
+### 0. 코랩 환경에서 시작
+
+1. 우선 편하게 진행할 수 있도록 제 깃허브에서 repository를 클론합니다.
+
+```python
+!git clone https://github.com/gachonyws/face-mask-detector.git
+
+```
+
+2. 디렉토리 이동 후 작업 시작
+
+```python
+cd face-mask-detector/
+```
+
+3.
 
 ### 1. 모델 로드
 
@@ -75,6 +91,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import cv2
 import os
+import matplotlib.pyplot as plt
 
 # 사진 속에서 얼굴을 탐지하는 face_detector 모델
 facenet = cv2.dnn.readNet('face_detector/deploy.prototxt','face_detector/res10_300x300_ssd_iter_140000.caffemodel')
@@ -85,7 +102,7 @@ model = load_model('mask_detector.model')
 ### 2. 이미지 로드
 
 ```python
-img = cv2.imread('/content/face-mask-detector/examples/example1.png')
+img = cv2.imread('/content/face-mask-detector/examples/example_01.png')
 h,w = img.shape[:2]
 plt.figure(figsize=(16,10))
 plt.imshow(img[:,:,::-1]) # BGR -> RGB 변환
@@ -167,7 +184,7 @@ cap = cv2.VideoCapture('examples/03.mp4')
 ret, img = cap.read()
 
 fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-out = cv2.VideoWriter('output.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (img.shape[1], img.shape[0]))
+out = cv2.VideoWriter('./output.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (img.shape[1], img.shape[0]))
 
 while cap.isOpened():
     ret, img = cap.read()
@@ -219,6 +236,11 @@ while cap.isOpened():
 out.release()
 cap.release()
 ```
+
+![example4](/assets/images/mask-detection/mp4_result.png)
+
+**코랩 내에서 동영상 재생에 문제가 있어 결과물을 로컬로 다운받아서 재생해 보시면 됩니다.**
+
 
 ---
 
