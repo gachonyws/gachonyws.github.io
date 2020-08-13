@@ -72,7 +72,6 @@ tags:
 
 ```python
 !git clone https://github.com/gachonyws/face-mask-detector.git
-
 ```
 
 2. 디렉토리 이동 후 작업 시작
@@ -80,8 +79,6 @@ tags:
 ```python
 cd face-mask-detector/
 ```
-
-3.
 
 ### 1. 모델 로드
 
