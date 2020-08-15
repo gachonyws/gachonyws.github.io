@@ -9,6 +9,7 @@ categories:
   - python
 tags:
   - level 2
+  - Queue/Stack
 published: true
 ---
 
